@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -l select=10:ncpus=24:mpiprocs=24
+#PBS -P CBBI1154
+#PBS -q normal
+#PBS -l walltime=1:00:00
+#PBS -o /mnt/lustre/users/jburgess1/test1.out
+#PBS -e /mnt/lustre/users/jburgess1/test1.err
+#PBS -m abe
+#PBS -M jeremygburgess@gmail.com
+
+module load chpc/autodock/mpi-vina/openmpi-4.0.0/gcc-7.3.0
+module load chpc/autodock_vina/1.1.2/gcc-6.1.0
+
+cd /mnt/lustre/users/jburgess1/ZINC_DB/
+
+sh ../1_Python_Scripts_Benchmarking/run_program_in_subfolders.sh
+
+

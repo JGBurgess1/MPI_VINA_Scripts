@@ -12,4 +12,9 @@ Steps:
 <br>
 <br>to include your own ZINC directory.
 
-(3) 
+(3) Create a template folder with the structure:
+<br> - conf.txt           (your vina config file, with receptor and grid co-ordinates and sizes)
+<br> - receptor.pdbqt     (your receptor file, ready for docking)
+<br> - vina.exe           (the vina executable file, found in the main github directory)
+
+(4)

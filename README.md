@@ -17,7 +17,7 @@ Steps:
 <br> replace the 'QcAB.pdbqt' file with your own receptor file.
 <br> - conf.txt           (your vina config file, with receptor and grid co-ordinates and sizes)
 <br> - receptor.pdbqt     (your receptor file, ready for docking)
-<br> - vina.exe           (the vina executable file, found in the main github directory)
+<br> - vina.exe           (the vina executable file)
 
 (4) Go to the file mpi_run_script.sh
 <br> go to the line

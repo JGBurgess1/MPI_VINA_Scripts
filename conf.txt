@@ -1,0 +1,7 @@
+receptor = /mnt/lustre/users/jburgess1/template_folder/Vina/QcAB.pdbqt
+center_x = 216.576
+center_y = 225
+center_z = 197.25
+size_x = 26
+size_y = 26
+size_z = 26

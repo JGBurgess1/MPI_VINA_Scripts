@@ -28,3 +28,7 @@ Steps:
 <br> change the cd "path to main ZINC directory" line to your own ZINC main directory
 <br> try a short walltime initially, to make sure the file works as expected.
 <br> once you are happy with the results, increase the walltime e.g. to 48hours for normal queue, or 96 hours for large queue.
+
+Bugs - 
+stopped after a single 100 000 file, now it continues.
+Aware of one issue (5 Aug) that after almost 300 000 files it also stops processing, but will check later with the output/error logs.

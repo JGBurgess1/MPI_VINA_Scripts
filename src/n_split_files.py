@@ -4,9 +4,11 @@ def split_file(root, filename):
     """This works similarly to Vina_Split. 
        Need to include the ability to process single files as well, however. [later date]."""
     os.chdir(root)
-    os.mkdir("Ligand")
-    os.mkdir("Output")
-    os.mkdir("ProcessedLigand")
+    if not os.path.exists(f'{root}/Ligand'):
+        os.mkdir("Ligand")
+        os.mkdir("Output")
+        os.mkdir("ProcessedLigand")
+        
     with open(filename, 'r') as larger_file:
         content = larger_file.read()
     # Reads entire file, saving it to a list, but splitting it around the keyword 'ENDMDL'

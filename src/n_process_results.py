@@ -1,12 +1,12 @@
 import os
 
-def process(directory):
+def process(root):
     """Method grabs the results of the top scoring docked pose, and prints the result with its ZINC identifier and tranche identifier to the results file."""
-    for file in os.listdir(directory+"/Output/"):
+    for file in os.listdir(root+"/Output/"):
         if file[-5:] == "pdbqt":
             lines = []
 
-            with open(f'{directory}/Output/{file}', "r") as new_file:
+            with open(f'{root}/Output/{file}', "r") as new_file:
                 lines.append(new_file.readline())
                 lines.append(new_file.readline())
                 lines.append(new_file.readline())
@@ -21,5 +21,5 @@ def process(directory):
             Vina_score = lines[1][3]
 
             new_line_in_file = ", ".join([ZINC_name,filename,Vina_score])
-            with open(directory+"/Output/results", "a") as results_file:
+            with open(root+"/Output/results", "a") as results_file:
                 results_file.write(new_line_in_file + "\n")

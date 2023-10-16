@@ -5,9 +5,13 @@ import shutil
 import n_split_files as nsf
 import n_process_results as npr
 
+# declared variables
+
+ZINC_DIRECTORY = "/mnt/lustre/groups/CBBI1154/ZINC_20/ZINC_DB/"
+
 def main():
     #input_directory = sys.argv[1]
-    input_directory = "/mnt/lustre/users/jburgess1/ZINC_DB_Test"
+    input_directory = ZINC_DIRECTORY
     #root_dir = "/mnt/lustre/users/jburgess1/ZINC_DB_Test/AA/AAML"
     for root, dirs, files in os.walk(input_directory):
         for file in files:

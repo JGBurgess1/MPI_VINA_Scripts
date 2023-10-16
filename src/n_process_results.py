@@ -19,7 +19,8 @@ def process(root):
 
             ZINC_name = lines[2][3]
             Vina_score = lines[1][3]
+            #ignoring the first line from the file?
 
-            new_line_in_file = ", ".join([ZINC_name,filename,Vina_score])
+            new_line_in_file = ",".join([ZINC_name,filename,Vina_score])
             with open(root+"/Output/results", "a") as results_file:
                 results_file.write(new_line_in_file + "\n")

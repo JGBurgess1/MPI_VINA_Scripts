@@ -1,12 +1,12 @@
 #!/bin/bash
-#PBS -l select=1:ncpus=24:mpiprocs=24
+#PBS -l select=25:ncpus=24:mpiprocs=24
 #PBS -P CBBI1154
-#PBS -q smp
-#PBS -l walltime=4:00:00
+#PBS -q large
+#PBS -l walltime=96:00:00
 #PBS -o /mnt/lustre/users/jburgess1/stdOut
 #PBS -e /mnt/lustre/users/jburgess1/stdErr
 #PBS -m abe
-#PBS -N 16_Oct_smp_1_4hours
+#PBS -N 16_Oct_large_96_hours
 #PBS -M jeremygburgess@gmail.com
 
 # loading needed modules, python, AD_Vina MPI, and open_mpi.
